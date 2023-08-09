@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <section className="w-full sticky text-standarGray bg-[#FEFDF9] top-0 z-10">
+    <section className="w-full sticky text-standarGray bg-standardBlack top-0 z-10">
       <div className="text-[15px] font-medium py-4 flex items-center justify-between container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}

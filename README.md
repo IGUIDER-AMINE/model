@@ -2,7 +2,7 @@
 
 My name is IGUIDER Amine i'm a full-stack developer
 
-I am excited to share the new design concept for the Modal Landing Page Website called FRESH. Scroll down for more! 😉
+I am excited to share the new design concept for the Modal Landing Page Website called "BR. MODELS". Check the link for more! 😉
 
 ## Deploy on Vercel
 
