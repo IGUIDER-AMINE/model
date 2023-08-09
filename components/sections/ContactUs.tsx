@@ -1,16 +1,12 @@
 import { img1 } from "@/public/assets";
 import Image from "next/image";
 import React from "react";
-import {
-  BsInstagram,
-  BsTwitter,
-  BsFillArrowUpRightCircleFill,
-} from "react-icons/bs";
+import { BsInstagram, BsTwitter, BsArrowUpRight } from "react-icons/bs";
 
 const ContactUs = () => {
   return (
     <section id="ContactUs" className="container mx-auto space-y-6 px-4">
-      <h1 className="font-titleFont text-center text-white font-bold text-4xl">
+      <h1 className="font-titleFont text-center text-white font-bold text-5xl">
         <span className="text-standardBlue">Connect</span> and{" "}
         <br className="hidden md:block" />
         Collaborate with Us
@@ -26,11 +22,11 @@ const ContactUs = () => {
           <span>Twitter</span>
         </div>
       </div>
-      <div>
+      <div className="relative">
         <Image src={img1} alt="Models" />
-        <button>
+        <button className="absolute top-[50%] left-[40%] rounded-full flex items-center bg-standardGreen text-standardBlack font-semibold pl-6 p-2 gap-2">
           <span>Contact Us</span>
-          <BsFillArrowUpRightCircleFill className="bg-white rounded-full text-standardBlack p-4" />
+          <BsArrowUpRight className="bg-white p-2 rounded-full w-10 h-10" />
         </button>
       </div>
     </section>
