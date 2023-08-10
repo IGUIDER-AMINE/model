@@ -21,7 +21,7 @@ const CategoryModel = ({
     <div className="space-y-4">
       <div className="grid grid-cols-6 lg:grid-cols-11 items-center gap-2">
         <div className="col-span-5">
-          <h1 className="font-titleFont text-xl md:text-3xl font-bold text-white">
+          <h1 className="font-titleFont text-xl md:text-2xl font-bold text-white">
             {title}
           </h1>
           <div className="truncate text-sm md:text-[16px]">{description}</div>
@@ -42,7 +42,7 @@ const CategoryModel = ({
         </div>
         <div className="col-span-1 flex justify-end">
           <button className="border rounded-full p-3">
-            <BsArrowUpRight className="text-white sm:h-8 sm:w-8" />
+            <BsArrowUpRight className="text-white h-5 w-5" />
           </button>
         </div>
       </div>
