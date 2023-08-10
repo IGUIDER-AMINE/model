@@ -4,10 +4,7 @@ import React from "react";
 
 const Brands = () => {
   return (
-    <section
-      id="Categories"
-      className="container mx-auto space-y-12 px-4 lg:px-24"
-    >
+    <section id="Brand" className="container mx-auto space-y-12 px-4 lg:px-24">
       <div className="grid grid-cols-2 md:grid-cols-4 items-center gap-8">
         <Image src={logo1} alt="Logo" />
         <Image src={logo3} alt="Logo" />

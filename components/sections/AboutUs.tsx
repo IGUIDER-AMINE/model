@@ -3,7 +3,7 @@ import CardIndustry from "../elements/CardIndustry";
 
 const AboutUs = () => {
   return (
-    <section id="Categories" className="container mx-auto space-y-12 px-4">
+    <section id="AboutUs" className="container mx-auto space-y-12 px-4">
       <div className="flex flex-col justify-between flex-wrap lg:flex-row items-center space-y-6 text-center lg:text-start">
         <h1 className="font-titleFont text-white font-bold text-2xl md:text-3xl lg:text-5xl">
           Experiences in
