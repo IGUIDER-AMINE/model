@@ -34,14 +34,14 @@ const AboutUs = () => {
       <div className="grid grid-cols-4 gap-8">
         <CardIndustry
           title="F & B"
-          image="/assets/images/img2.jpg"
+          image="/assets/images/img9.jpg"
           number={11}
           link="#Categories"
           style="mt-12"
         />
         <CardIndustry
           title="Homeware"
-          image="/assets/images/img7.jpg"
+          image="/assets/images/img5.jpg"
           number={23}
           link="#Categories"
           style=""
