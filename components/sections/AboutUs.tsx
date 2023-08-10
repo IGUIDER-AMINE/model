@@ -1,4 +1,5 @@
 import { BsArrowUpRight } from "react-icons/bs";
+import CardIndustry from "../elements/CardIndustry";
 
 const AboutUs = () => {
   return (
@@ -29,6 +30,36 @@ const AboutUs = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="grid grid-cols-4 gap-8">
+        <CardIndustry
+          title="F & B"
+          image="/assets/images/img2.jpg"
+          number={11}
+          link="#Categories"
+          style="mt-12"
+        />
+        <CardIndustry
+          title="Homeware"
+          image="/assets/images/img7.jpg"
+          number={23}
+          link="#Categories"
+          style=""
+        />
+        <CardIndustry
+          title="Fashion"
+          image="/assets/images/img3.jpg"
+          number={36}
+          link="#Categories"
+          style="mt-24"
+        />
+        <CardIndustry
+          title="Beauty"
+          image="/assets/images/img6.jpg"
+          number={21}
+          link="#Categories"
+          style=""
+        />
       </div>
     </section>
   );
