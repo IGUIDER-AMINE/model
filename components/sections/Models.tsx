@@ -1,5 +1,6 @@
 import CardModel from "../elements/CardModel";
 import { modelsData } from "@/util/data";
+import { motion } from "framer-motion";
 
 const Models = () => {
   return (
@@ -21,12 +22,18 @@ const Models = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-4">
         {modelsData?.map((item, index) => {
           return (
-            <CardModel
+            <motion.div
               key={index}
-              image={item?.image}
-              fullName={item?.fullName}
-              information={item?.information}
-            />
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 * index }}
+            >
+              <CardModel
+                image={item?.image}
+                fullName={item?.fullName}
+                information={item?.information}
+              />
+            </motion.div>
           );
         })}
       </div>

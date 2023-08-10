@@ -2,6 +2,7 @@ import { img1 } from "@/public/assets";
 import Image from "next/image";
 import React from "react";
 import { BsInstagram, BsTwitter, BsArrowUpRight } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const ContactUs = () => {
   return (
@@ -22,13 +23,18 @@ const ContactUs = () => {
           <span>Twitter</span>
         </div>
       </div>
-      <div className="relative">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="relative"
+      >
         <Image src={img1} alt="Models" />
         <button className="absolute bottom-2 md:bottom-[45%] right-[20%] md:right-[40%] space-x-8 rounded-full flex items-center bg-standardGreen text-standardBlack font-semibold pl-6 p-2 gap-2">
           <span>Contact Us</span>
           <BsArrowUpRight className="bg-white p-2 rounded-full w-8 h-8" />
         </button>
-      </div>
+      </motion.div>
     </section>
   );
 };

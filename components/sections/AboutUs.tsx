@@ -1,5 +1,6 @@
 import { BsArrowUpRight } from "react-icons/bs";
 import CardIndustry from "../elements/CardIndustry";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
@@ -32,34 +33,58 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <CardIndustry
-          title="F & B"
-          image="/assets/images/img9.jpg"
-          number={11}
-          link="#Categories"
-          style="md:mt-12"
-        />
-        <CardIndustry
-          title="Homeware"
-          image="/assets/images/img5.jpg"
-          number={23}
-          link="#Categories"
-          style=""
-        />
-        <CardIndustry
-          title="Fashion"
-          image="/assets/images/img3.jpg"
-          number={36}
-          link="#Categories"
-          style="md:mt-24"
-        />
-        <CardIndustry
-          title="Beauty"
-          image="/assets/images/img6.jpg"
-          number={21}
-          link="#Categories"
-          style=""
-        />
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.1 }}
+        >
+          <CardIndustry
+            title="F & B"
+            image="/assets/images/img9.jpg"
+            number={11}
+            link="#Categories"
+            style="md:mt-12"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.2 }}
+        >
+          <CardIndustry
+            title="Homeware"
+            image="/assets/images/img5.jpg"
+            number={23}
+            link="#Categories"
+            style=""
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.3 }}
+        >
+          <CardIndustry
+            title="Fashion"
+            image="/assets/images/img3.jpg"
+            number={36}
+            link="#Categories"
+            style="md:mt-24"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.4 }}
+        >
+          <CardIndustry
+            title="Beauty"
+            image="/assets/images/img6.jpg"
+            number={21}
+            link="#Categories"
+            style=""
+          />
+        </motion.div>
       </div>
     </section>
   );
