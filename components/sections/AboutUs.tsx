@@ -31,13 +31,13 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <CardIndustry
           title="F & B"
           image="/assets/images/img9.jpg"
           number={11}
           link="#Categories"
-          style="mt-12"
+          style="md:mt-12"
         />
         <CardIndustry
           title="Homeware"
@@ -51,7 +51,7 @@ const AboutUs = () => {
           image="/assets/images/img3.jpg"
           number={36}
           link="#Categories"
-          style="mt-24"
+          style="md:mt-24"
         />
         <CardIndustry
           title="Beauty"
