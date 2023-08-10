@@ -41,4 +41,39 @@ const modelsData = [
   },
 ];
 
-export { modelsData };
+const categoriesData = [
+  {
+    title: "Females Model",
+    description: "Some of the best female model ready to onboard!",
+    number: 40,
+    nationality: "Chinese, Russian",
+    infos: "Ethics / Races",
+    link: "#Categories",
+  },
+  {
+    title: "Males Model",
+    description: "Some of the best male model ready to onboard!",
+    number: 32,
+    nationality: "Indonesian, Vietnamese",
+    infos: "Ethics / Races",
+    link: "#Categories",
+  },
+  {
+    title: "Kids Model",
+    description: "Some of the best kids model ready to onboard!",
+    number: 32,
+    nationality: "Filipino, Japanese",
+    infos: "Ethics / Races",
+    link: "#Categories",
+  },
+  {
+    title: "Toddlers Model",
+    description: "Some of the best toddlers model ready to onboard!",
+    number: 32,
+    nationality: "Indonesian, Vietnamese",
+    infos: "Korean / Indonesian",
+    link: "#Categories",
+  },
+];
+
+export { modelsData, categoriesData };
