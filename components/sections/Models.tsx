@@ -1,15 +1,5 @@
-import {
-  img2,
-  img3,
-  img4,
-  img5,
-  img6,
-  img7,
-  img8,
-  img9,
-} from "@/public/assets";
-import Image from "next/image";
-import React from "react";
+import CardModel from "../elements/CardModel";
+import { modelsData } from "@/util/data";
 
 const Models = () => {
   return (
@@ -28,15 +18,17 @@ const Models = () => {
           one a shinig star in their own right
         </p>
       </div>
-      <div className="grid grid-cols-4">
-        <Image src={img2} alt="Model" className="h-full grayscale" />
-        <Image src={img6} alt="Model" className="h-full grayscale" />
-        <Image src={img3} alt="Model" className="h-full" />
-        <Image src={img5} alt="Model" className="h-full grayscale" />
-        <Image src={img7} alt="Model" className="h-full grayscale" />
-        <Image src={img3} alt="Model" className="h-full grayscale" />
-        <Image src={img8} alt="Model" className="h-full grayscale" />
-        <Image src={img4} alt="Model" className="h-full grayscale" />
+      <div className="grid md:grid-cols-2 lg:grid-cols-4">
+        {modelsData?.map((item, index) => {
+          return (
+            <CardModel
+              key={index}
+              image={item?.image}
+              fullName={item?.fullName}
+              information={item?.information}
+            />
+          );
+        })}
       </div>
     </section>
   );

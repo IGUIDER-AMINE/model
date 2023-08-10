@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>FRESH - Food Delivery</title>
+        <title>BR. Models</title>
       </Head>
       <Layout>
         <Banner />
