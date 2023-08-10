@@ -32,11 +32,13 @@ module.exports = {
       },
       colors: {
         standardGreen: "#52D488",
+        standardPink: "#EA4C89",
+        standardSlate: "#181B1B",
         standardGray: "#8D8E8E",
         standardBlue: "#6BC9FB",
         standardBlack: "#111313",
         standardOrange: "#ED734B",
-        standardPink: "#D17178",
+        // standardPink: "#D17178",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

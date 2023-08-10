@@ -4,7 +4,7 @@ import CardIndustry from "../elements/CardIndustry";
 const AboutUs = () => {
   return (
     <section id="AboutUs" className="container mx-auto space-y-12 px-4">
-      <div className="flex flex-col justify-between flex-wrap lg:flex-row items-center space-y-6 text-center lg:text-start">
+      <div className="flex flex-col justify-between flex-wrap lg:flex-row md:items-center space-y-6 md:text-center lg:text-start">
         <h1 className="font-titleFont text-white font-bold text-2xl md:text-3xl lg:text-5xl">
           Experiences in
           <br className="hidden md:block" />
@@ -19,7 +19,7 @@ const AboutUs = () => {
           array of industries.
         </p>
 
-        <div className="flex flex-col md:flex-row gap-4 items-center gap-x-4">
+        <div className="flex flex-col sm:flex-row gap-4 sm:items-center gap-x-4">
           <div className="text-sm md:hidden xl:block">
             32+ Industries <span className="pl-4 font-light">|</span>
           </div>
