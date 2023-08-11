@@ -1,9 +1,4 @@
 import React from "react";
-import Link from "next/link";
-import { BsTwitter } from "react-icons/bs";
-import { AiOutlineGoogle } from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
