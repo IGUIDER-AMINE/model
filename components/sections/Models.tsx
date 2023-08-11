@@ -19,7 +19,7 @@ const Models = () => {
           one a shinig star in their own right
         </p>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid max-w-[1700px] mx-auto md:grid-cols-2 lg:grid-cols-4">
         {modelsData?.map((item, index) => {
           return (
             <motion.div
